@@ -1,0 +1,564 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input,
+textarea {
+  caret-color: green;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pb {
+  width: 100vw;
+  height: 100vh;
+  background-color: #B1EDE8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone_book_main,x
+.phone_book_main-c {
+  width: 80vw;
+  height: 90vh;
+  background-color: #FFF5EB;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pb1 {
+  font-size: 40px;
+  margin-top: -35px;
+}
+
+.phone_book_main1 {
+  width: 30vw;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px #59D9CF;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.pb13 {
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+.phone_book_main13 {
+  width: 30vw;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #59D9CF;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.phone_book_main11,
+.phone_book_main12 {
+  text-align: center;
+}
+
+.phone_add_icon,
+.phone_contact_icon {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.phone_add_icon:hover,
+.phone_contact_icon:hover {
+  color: #59D9CF;
+  transform: scale(1.2);
+}
+
+.name-main {
+  font-size: 22px;
+}
+
+.number-main {
+  font-size: 22px;
+}
+
+.name-box,
+.number-box {
+  border: none;
+  border-radius: 20px;
+  width: 30vw;
+  height: 5vh;
+  border: solid #59D9CF;
+  padding-left: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px #59D9CF;
+
+}
+
+.name-box {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.number-box {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.name-box:focus,
+.number-box:focus {
+  outline-offset: 2px;
+  outline: 2px solid #7CF0BD;
+}
+
+.phone_book_button11 {
+  width: 30vw;
+  height: 6vh;
+  font-size: 15px;
+  background-color: #59D9CF;
+  border: none;
+  border-radius: 10PX;
+}
+
+.phone_book_button11:hover {
+  background-color: #2AB7AB;
+  cursor: pointer;
+  border-radius: 40px;
+
+}
+
+.pb11 {
+  font-size: 40px;
+}
+
+.phone_book_c1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-icon11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.home-icon {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+
+.serch-icon {
+  display: flex;
+  margin-left: 250px;
+
+}
+
+.home-icon:hover {
+  color: #59D9CF;
+  cursor: pointer;
+}
+
+.serch-icon:hover {
+  color: #59D9CF;
+  cursor: pointer;
+}
+
+.p-t {
+  width: 35vw;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px #2AB7AB;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  padding: 20px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: auto;
+  height: auto;
+  margin-top: -20px;
+}
+
+th,
+td {
+  padding: 5px 20px;
+  text-align: center;
+  border-top: 1px solid #59D9CF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td {
+  height: 32px;
+}
+
+
+
+.text-data {
+  background-color: #59D9CF;
+}
+
+.delet-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.edit-icon:hover {
+  color: #59D9CF;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.e-s {
+  width: 30vw;
+  height: 6vh;
+  font-size: 15px;
+  background-color: #59D9CF;
+  border: none;
+  transition: transform 0.5s ease;
+  margin-bottom: 30px;
+  border-radius: 10PX;
+
+}
+
+.e-s:hover {
+  background-color: #2AB7AB;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.e-c {
+  width: 30vw;
+  height: 6vh;
+  font-size: 15px;
+  background-color: #da4167;
+  border: none;
+  border-radius: 10PX;
+}
+
+.e-c:hover {
+  cursor: pointer;
+  background-color: #FF3347;
+  border-radius: 30px;
+}
+
+.t-c {
+  font-size: 25px;
+  display: flex;
+  color: #000000;
+}
+
+span {
+  color: #E9190F;
+  margin-left: 10px;
+}
+
+.popup-message {
+  display: flex;
+  justify-content: center;
+  color: #9D8DF1;
+  font-size: 20px;
+}
+
+.delete-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -25%;
+  width: 24vw;
+  height: 25vh;
+  border-radius: 30px;
+  background-color: #000000da;
+  color: #da4167;
+}
+
+.d-p {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.y-n-button {
+  display: flex;
+  padding-left: 90px;
+  padding-bottom: 20px;
+}
+
+
+.yes-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: #50fa9a;
+  transition: transform 0.5s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.yes-button:hover {
+  background-color: #02f86d;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #02f86d;
+}
+
+.no-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  background-color: rgb(254, 77, 77);
+  transition: transform 0.5s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.no-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: red;
+  box-shadow: 0px 0px 10px red;
+}
+
+@media only screen and (max-width: 600px) {
+  .pb {
+    width: 100vw;
+    height: 100hv;
+  }
+
+  .phone_book_main {
+    width: 90vw;
+    height: 150vw;
+  }
+
+  .phone_book_main-c {
+    width: 90vw;
+    height: 150vw;
+  }
+
+  .phone_book_main1,
+  .phone_book_main13 {
+    width: 60vw;
+    height: 50vh;
+    margin-top: -20px;
+    box-shadow: 0px 0px 10px #59D9CF;
+
+  }
+
+  .phone_book_main11,
+  .phone_book_main12 {
+    font-size: 15px;
+  }
+
+  .pb1 {
+    font-size: 25px;
+    margin-top: 1px;
+  }
+
+  .pb13 {
+    font-size: 25px;
+    margin-top: -15px;
+  }
+
+
+  .name-box,
+  .number-box {
+    width: 90%;
+  }
+
+  .phone_book_button11 {
+    width: 25vw;
+    margin-left: 50px;
+  }
+
+  .home-icon {
+    margin-bottom: -45px;
+    margin-right: 40px;
+  }
+
+  .serch-icon {
+    margin-left: 50px;
+    margin-bottom: -5px;
+
+  }
+
+  .home-icon1 {
+    margin-bottom: -23px;
+    margin-right: 40px;
+  }
+
+  .serch-icon1 {
+    margin-left: 50px;
+    margin-bottom: -5px;
+
+  }
+
+  .pb11 {
+    font-size: 25px;
+    margin-top: -30px;
+  }
+
+  .p-t {
+    width: 60vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #59D9CF;
+    overflow-x: auto;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #59D9CF;
+
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 1vw;
+    margin-left: 50px;
+
+  }
+
+  .e-s {
+    width: 25vw;
+    height: 5vh;
+    font-size: 15px;
+    background-color: #59D9CF;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+
+  .e-s:hover {
+    background-color: #59D9CF;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .e-c {
+    width: 25vw;
+    height: 5vh;
+    font-size: 15px;
+    background-color: rgb(254, 77, 77);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .e-c:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: red;
+
+  }
+
+  .t-c {
+    font-size: 20px;
+    display: flex;
+    margin-top: -15px;
+  }
+
+
+  .delete-confirmation {
+    margin-left: -25%;
+    width: 24vw;
+    height: 18vh;
+    border-radius: 25px;
+    background-color: #000000da;
+    color: #da4167;
+  }
+
+  .d-p {
+    font-size: 10px;
+  }
+
+  .y-n-button {
+    display: flex;
+    margin-left: -62px;
+  }
+
+  .yes-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+    background-color: #50fa9a;
+    transition: transform 0.5s ease;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .yes-button:hover {
+    background-color: #18e771;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .no-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: rgb(254, 77, 77);
+    transition: transform 0.5s ease;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .no-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: red;
+  }
+
+
+}
+
+@media only screen and (min-width: 601px) {}
